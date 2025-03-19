@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: BlocProvider<ChatBloc>(
         create: (context) => ChatBloc()..add(ConnectToWebSocket()),
-        child:  ChatScreen(),
+        child: ChatScreen(),
       ),
     );
   }
